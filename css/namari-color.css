@@ -135,7 +135,7 @@ a:hover, #header.nav-solid nav a:hover {
 
 
 body {
-    font-family: 'Gloria Hallelujah', sans-serif, Arial, Helvetica;
+    font-family: 'Titillium Web', sans-serif, Arial, Helvetica;
     font-size:15px;
     font-weight:normal;
     color:#111;
@@ -163,11 +163,12 @@ body {
 /* Banner Typography */
 
 #banner h1 {
-    font-family: 'Gloria Hallelujah', serif, Arial, Helvetica;
-    font-size:62px;
-    line-height:60px;
-    font-weight:800;
-    color:#111;
+font-family: 'Titillium Web', serif, Arial, Helvetica;
+    font-size: 87px;
+    line-height: 95px;
+    font-weight: 800;
+    color: #111;
+    text-shadow: 1px 1px white;
 }
 
 #banner h2 {
@@ -211,7 +212,7 @@ body {
 /* Standard Headings h1-h6 */
 
 h1 {
-    font-family: 'Gloria Hallelujah', sans-serif, Arial, Helvetica;
+    font-family: 'Titillium Web', sans-serif, Arial, Helvetica;
     font-size: 40px; 
     font-weight:300;
     color:#111;
