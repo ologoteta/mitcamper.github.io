@@ -37,13 +37,13 @@ a:hover, #header.nav-solid nav a:hover {
 
 /* Border Color */
 
-#banner .section-heading:before, .testimonial.classic footer:before {
-    /*background: #ec9205;*/
+/*#banner .section-heading:before, .testimonial.classic footer:before {
+    background: #ec9205;
 }
 
 .pricing-block-content:hover {
     border-color:#ec9205;
-}
+}*/
 
 
 /*------------------------------------------------------------------------------------------*/
@@ -89,8 +89,8 @@ a:hover, #header.nav-solid nav a:hover {
     color:#fff;    
 }
 
-.section-heading h2:after {
-    /*background:#ec9205;*/
+/*.section-heading h2:after {
+    background:#ec9205;
     content:"";
     display:block;
     width:30px;
@@ -100,7 +100,7 @@ a:hover, #header.nav-solid nav a:hover {
 
 .text-center .section-heading h2:after {
     margin:30px auto 25px auto;
-}
+}*/
 
 /* Primary Icon Colors */
 
@@ -172,9 +172,10 @@ body {
 
 #banner h2 {
     font-family: 'Titillium Web', sans-serif, Arial, Helvetica;
-    font-size:18px;
-    font-weight:300;
-    color:#111;
+    font-size: 26px;
+    font-weight: 300;
+    color: #111;
+    text-shadow: 1px 1px white;
 }
 
 
