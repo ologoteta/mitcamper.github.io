@@ -297,11 +297,8 @@ h6 {
 
 #banner .button {
     font-family: 'Titillium Web', sans-serif, Arial, Helvetica;
-    font-size:16px;
-    color:#111;
     width: 85%;
     text-align: center;
-
 }
 
 
@@ -314,13 +311,18 @@ h6 {
     font-weight: bold;
     font-size: 21px;
     box-shadow: 12px 12px #000;
+    border: 2px solid #000;
 }
 
 
 /* Button Hover Color */
 
 #banner .button:hover {
-   box-shadow: 6px 12px #000;
+    background: #fff;
+    border-radius: 50px;
+    color: #000;
+    border: 2px solid #000;
+
 }
 
 
