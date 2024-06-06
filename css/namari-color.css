@@ -125,7 +125,7 @@ a:hover, #header.nav-solid nav a:hover {
 
 #banner {
     background: url("../images/banner-images/ban.png") no-repeat right; top;
-    background-size:cover;
+    background-size: contain;
 }
 
 
