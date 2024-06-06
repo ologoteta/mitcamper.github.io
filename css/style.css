@@ -96,7 +96,7 @@ figure {
 
 .page-border > .top-border, .page-border > .right-border, .page-border > .bottom-border, .page-border > .left-border {
     padding: 11px;
-    background: #ec9205;
+    background: #fff;
 }
 
 .page-border .bottom-border, .page-border .top-border {
@@ -354,9 +354,10 @@ section {
 }
 
 #logo img {
-    max-height: 22px;
+    max-height: 60px;
     vertical-align: middle;
-    margin-right: 15px;
+    margin-right: 30px;
+    margin-top: 30px;
 }
 
 #navigation-logo {
