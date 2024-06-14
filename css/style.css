@@ -782,7 +782,7 @@ h6 {
 /*------------------------------------------------------------------------------------------*/
 
 #banner {
-    background-size: cover;
+    background-size: auto;
 }
 
 #banner-content.row {
