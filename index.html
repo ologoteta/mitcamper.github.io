@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mitcamper - Coming Soon!</title>
+    <style>
+        @font-face {
+            font-family: "Agrandir";
+            src: url("https://db.onlinewebfonts.com/t/1dc7840abb13fcda12aa8d1cb21fb832.eot");
+            src: url("https://db.onlinewebfonts.com/t/1dc7840abb13fcda12aa8d1cb21fb832.eot?#iefix")format("embedded-opentype"),
+            url("https://db.onlinewebfonts.com/t/1dc7840abb13fcda12aa8d1cb21fb832.woff2")format("woff2"),
+            url("https://db.onlinewebfonts.com/t/1dc7840abb13fcda12aa8d1cb21fb832.woff")format("woff"),
+            url("https://db.onlinewebfonts.com/t/1dc7840abb13fcda12aa8d1cb21fb832.ttf")format("truetype"),
+            url("https://db.onlinewebfonts.com/t/1dc7840abb13fcda12aa8d1cb21fb832.svg#Agrandir")format("svg");
+        }
+
+        @font-face {
+            font-family: "Agrandir Grand Heavy";
+            src: url("https://db.onlinewebfonts.com/t/eccf30d3af8a69bf0b97f01c6d46b8e2.eot");
+            src: url("https://db.onlinewebfonts.com/t/eccf30d3af8a69bf0b97f01c6d46b8e2.eot?#iefix")format("embedded-opentype"),
+            url("https://db.onlinewebfonts.com/t/eccf30d3af8a69bf0b97f01c6d46b8e2.woff2")format("woff2"),
+            url("https://db.onlinewebfonts.com/t/eccf30d3af8a69bf0b97f01c6d46b8e2.woff")format("woff"),
+            url("https://db.onlinewebfonts.com/t/eccf30d3af8a69bf0b97f01c6d46b8e2.ttf")format("truetype"),
+            url("https://db.onlinewebfonts.com/t/eccf30d3af8a69bf0b97f01c6d46b8e2.svg#Agrandir Grand Heavy")format("svg");
+        }
+
+        :root {
+            --primary-color: #FF7601;
+            --dark-color: #000000;
+            --light-color: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Agrandir", sans-serif;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: "Agrandir Grand Heavy", sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: center;
+            position: relative;
+        }
+
+        .coming-soon-section {
+            margin: 20px 0;
+        }
+
+        .logo-container {
+            background-color: var(--primary-color);
+            padding: 30px;
+            position: relative;
+            margin: 40px auto;
+            display: inline-block;
+            border-radius: 44% 56% 54% 46% / 62% 45% 55% 38%;
+            transform: rotate(-2deg);
+            width: 350px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            max-width: 280px;
+            margin: 0;
+        }
+
+        .wave-icon {
+            font-size: 82px;
+            z-index: 99999;
+            position: absolute;
+            left: 150px;
+            top: -30px;
+            animation: wave-animation 2.5s ease-in-out infinite;
+        }
+
+        @keyframes wave-animation {
+            0% { transform: rotate(0deg); }
+            10% { transform: rotate(14deg); }
+            20% { transform: rotate(-8deg); }
+            30% { transform: rotate(14deg); }
+            40% { transform: rotate(-4deg); }
+            50% { transform: rotate(10deg); }
+            60% { transform: rotate(0deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        .countdown {
+            margin: 30px 0;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .countdown-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 70px;
+        }
+
+        .countdown span {
+            color: var(--primary-color);
+            font-size: 40px;
+            font-family: "Agrandir Grand Heavy", sans-serif;
+        }
+        
+        .countdown-label {
+            font-size: 14px;
+            margin-top: 5px;
+            opacity: 0.8;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .feature-list {
+            text-align: left;
+            max-width: 500px;
+            margin: 30px auto;
+            font-size: 18px;
+        }
+
+        .feature-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-icon {
+            font-size: 28px;
+            margin-right: 15px;
+            min-width: 36px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 30px 0;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: "Agrandir", sans-serif;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #e66a00;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(255, 118, 1, 0.3);
+        }
+
+        .footer {
+            margin-top: 60px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 32px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+
+            .logo-container {
+                width: 300px;
+                height: 180px;
+                padding: 40px;
+            }
+
+            .logo {
+                max-width: 220px;
+            }
+
+            .wave-icon {
+                left: 130px;
+                font-size: 70px;
+            }
+            
+            .countdown {
+                gap: 10px;
+            }
+            
+            .countdown-item {
+                min-width: 60px;
+            }
+            
+            .countdown span {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-container {
+                width: 250px;
+                height: 150px;
+                padding: 30px;
+            }
+
+            .logo {
+                max-width: 180px;
+            }
+
+            .wave-icon {
+                left: 100px;
+                font-size: 60px;
+            }
+
+            .countdown {
+                flex-wrap: wrap;
+            }
+            
+            .countdown-item {
+                min-width: 70px;
+            }
+            
+            .countdown span {
+                font-size: 28px;
+            }
+
+            .feature-list {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main class="coming-soon-section">
+            <span class="wave-icon">👋</span>            
+            <div class="logo-container">
+                <img class="logo" src="/api/placeholder/300/100" alt="mitcamper logo" />
+            </div>
+            
+            <h1>Stiamo per arrivare!</h1>
+            <h2>Il lancio ufficiale è previsto per Luglio 2025</h2>
+            
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span id="countdown-days">--</span>
+                    <div class="countdown-label">Giorni</div>
+                </div>
+                <div class="countdown-item">
+                    <span id="countdown-hours">--</span>
+                    <div class="countdown-label">Ore</div>
+                </div>
+                <div class="countdown-item">
+                    <span id="countdown-minutes">--</span>
+                    <div class="countdown-label">Minuti</div>
+                </div>
+                <div class="countdown-item">
+                    <span id="countdown-seconds">--</span>
+                    <div class="countdown-label">Secondi</div>
+                </div>
+            </div>
+            
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feature-icon">🚐</div>
+                    <div>Ami il camper</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👨‍👩‍👧</div>
+                    <div>Viaggi con la tua famiglia</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✋🏼</div>
+                    <div>Ti piace conoscere gente nuova</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <div>mitcamper è l'app per te!</div>
+                </div>
+            </div>
+            
+            <a href="#subscribe" class="btn btn-primary">Iscriviti alla waiting list</a>
+            
+            <div class="footer">
+                &copy; 2025 mitcamper - Tutti i diritti riservati
+            </div>
+        </main>
+    </div>
+    
+    <script>
+        // Imposta la data di lancio (15 Luglio 2025)
+        const launchDate = new Date('July 15, 2025').getTime();
+        
+        // Aggiorna il countdown
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeLeft = launchDate - now;
+            
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown-days').textContent = days;
+            document.getElementById('countdown-hours').textContent = hours;
+            document.getElementById('countdown-minutes').textContent = minutes;
+            document.getElementById('countdown-seconds').textContent = seconds;
+        }
+        
+        // Aggiorna il countdown immediatamente e poi ogni secondo
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
